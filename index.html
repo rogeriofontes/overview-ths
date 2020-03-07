@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Workshop - NodeRed API's</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+				<h3>THS - Triângulo Hackerspace</h3>
+					<h6>Como funciona e o que é o Triângulo Hackerspace (THS)</h6>
+					<img data-src="img/ths-logo.png" width="200" height="200">
+					<p>
+						<small>Palestrante: <a href="http://rogeriofontes.inf.br" target="_blank">Rogério Fontes</a> / <a href="http://twitter.com/rogeriofontes" target="_blank">@rogeriofontes</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h5>Sobre o palestrante:</h5>
+					<p><span style="font-size:22px">APAIXONADO EM MANEIRAS E FORMAS ÁGEIS DE CRIAR CÓDIGO FONTE. PROGRAMANDO SEMPRE TOMANDO UM BOM CAFÉ E ESCUTANDO UM BELO E PESADO ROCK`N ROLL. TRABALHA A MAIS DE 10 ANOS COM JAVA E LINUX, PASSANDO POR ANDROID, PYTHON, PHP E AGORA COM O CORAÇÃO NO ANGULAR.JS E NODE.JS. PROFESSOR UNIVERSITÁRIO DE REDES DE COMPUTADORES, JAVA E DISPOSITIVOS MÓVEIS. JUGLEADER E CO-FUNDADOR DO UAIJUG (GRUPO DE USUÁRIOS DO TRIÂNGULO MINEIRO) E DO TRIÂNGULO HACKERSPACE. ALÉM DISSO AVENTURANDO COMO EMPREENDEDOR E ARQUITETO Everis E APAIXONADO POR ESTUDOS MÚSICAIS. </p>
+				</section>
+
+				<section>
+					<a href="http://www.uaijug.com.br/" target="_blank"><img data-src="img/uaijug-300.png" width="350" height="250"></a>
+					<a href="http://www.triangulohackerspace.net.br/" target="_blank"><img data-src="img/150px-Logo_triangulohs.png" width="350" height="250"></a>
+				</section>
+
+				<section>
+					<section>
+						<h5>O que é ser um Hacker?</h5>
+						<img data-src="img/hackers-types.jpg" width="600" height="400">
+					</section>
+					<section>
+						<h5>O que é ser um Hacker?</h5>
+						<p>O termo hacker foi cunhado anos 1950 nos Estados Unidos.</p>
+					</section>
+					<section>
+						<h5>O que é ser um Hacker?</h5>
+						<p>No (MIT), onde a palavra teria surgido, os primeiros hacks eram trotes, brincadeiras. Em um deles, estudantes do instituto colocaram uma réplica de um carro de patrulha do campus no topo do prédio principal.</p>
+					</section>
+					<section>
+						<h5>O que é ser um Hacker?</h5>
+						<p>Ao longo do tempo, o termo ficou associado a programadores de computador, que começavam a ganhar espaço no MIT e em outras partes do mundo. Para esses pioneiros, um hack era uma façanha de programação. Esses feitos eram muito admirados por combinar conhecimento específico e instinto criativo..</p>
+					</section>
+					<section>
+						<h5>Para saber mais:</h5>
+						<p><a href="https://www.terra.com.br/noticias/tecnologia/internet/termo-hacker-vem-dos-anos-50-saiba-mais-sobre-a-historia,e759dceae77ea310VgnCLD200000bbcceb0aRCRD.html">https://www.terra.com.br/noticias/tecnologia/internet/termo-hacker-vem-dos-anos-50-saiba-mais-sobre-a-historia,e759dceae77ea310VgnCLD200000bbcceb0aRCRD.html</a></a></p>
+					</section>
+				</section>
+			
+				<section>
+		   			<section>
+						<h5>Tipos de Hackers</h5>
+						<p><span style="font-size:22px">Seja um hacker etico (White Hat). </p>
+						<a href="https://bestiphider.com/types-of-hackers/"><img data-src="img/types-of-hackers.jpg" width="400" height="200"></a>
+						<!--p>Clique na imagem para saber mais:<img data-src="img/arrow.png" width="40" height="40"></p-->
+					</section>
+					
+					<section>
+						<h5>Em remuso:</h5>
+						<p><span style="font-size:22px">
+							Alguém que gosta de estudar a fundo determinado assunto;
+						</span></p>	
+					</section>
+				</section>
+
+				<section>
+					<h5>Cultura Hacker:</h5>
+					<p><span style="font-size:22px">
+						<ul>
+							<li><span style="font-size:22px"><strong>Liberdade</strong>, no sentido de autonomia, com livre acesso e livre circulação das informações, por isso incentivam o uso de softwares e hardwares opensource;</span></li>
+							<li><span style="font-size:22px"><strong>Aprendizado</strong> pela prática, ou seja, se dedicar e praticar alguma tecnologia ou habilidade;</span></li>
+							<li><span style="font-size:22px"><strong>Cooperação</strong> entre as pessoas, independente de seu grau de instrução.</span></li>
+						</ul>
+					</span></p>
+				</section>
+
+				<section>
+					<h5>O que é um hackerspace?</h5>
+					<p><span style="font-size:22px">
+						Um hackerspace ou hackspace, também conhecido como hacklab, makerspace ou creative space é um local real com o formato de um laboratório comunitário que segue a ética hacker, tendo espírito agregador, convergente e inspirador. Wikipédia
+					</span></p>					
+				</section>
+				
+				<section>
+					<h5>Primeiro Hackerspace:</h5>
+					<p><span style="font-size:22px">
+						<a href="https://en.wikipedia.org/wiki/C-base">c-base, localizado em Berlim na Alemanha, no ano de 1981.</a>
+					</span></p>		
+				</section>
+
+				<section>
+					<h5>Primeiro Hackerspace Brasileiro:</h5>
+					<p><span style="font-size:22px">
+						<a href="https://garoa.net.br/wiki/P%C3%A1gina_principal">Hacker Clube, localizado na cidade de São Paulo, fundado em 2009</a>
+					</span></p>		
+				</section>
+
+				<section>
+					<h5>List de Hackerspaces:</h5>
+					<p><span style="font-size:22px">
+						<ul>
+							<li span style="font-size:22px">Brasil:&nbsp;<a href="https://garoa.net.br/wiki/Hackerspaces_Brasileiros">https://garoa.net.br/wiki/Hackerspaces_Brasileiros</a></li>
+							<li span style="font-size:22px">Mundo:&nbsp;<a href="https://wiki.hackerspaces.org/List_of_Hacker_Spaces">https://wiki.hackerspaces.org/List_of_Hacker_Spaces</a></li>
+						</ul>
+					</span></p>		
+				</section>
+
+				<section>
+					<h5>O que é o Triângulo Hackerspaces:</h5>
+					<p>
+						<span style="font-size:22px">Somos um Grupo de entusiastas com o intuito de prover um ambiente para a comunidade, onde a mesma poderá utiliza-lo para agregar e disseminar conhecimento. Para fazermos isso, ensimanos e criamos projetos baseados Arduíno, Raspberry PI entre outros utilizando IoT. Através de Cursos, Workshops, trainamentos, pesquisas e colaboração entre os Associados.</span>
+					</p>		
+				</section>
+
+				<section>
+					<h5>O que é o Triângulo Hackerspaces:</h5>
+					<p>
+						<span style="font-size:22px">
+							Data de Fundação:	17/02/2013<br />
+							Fundadores:
+							<ul>
+								<li style="font-size:22px">Rogério Fontes</li>
+								<li style="font-size:22px">Augusto Branquinho</li>
+								<li style="font-size:22px">Tesso Costa</li>
+								<li style="font-size:22px">Evandro Gaio</li>
+							</ul>
+						</span>
+					</p>		
+				</section>
+
+				<section>
+					<h5>Estamos na lista oficial:</h5>
+					<p>
+						<a href="https://wiki.hackerspaces.org/List_of_Hacker_Spaces"><img data-src="img/ths.png" width="600" height="400"></a>
+						</p>		
+				</section>
+
+				<section>
+					<h5>Estamos na lista oficial:</h5>
+					<p>
+						<img data-src="img/uberaba.jpg" width="600" height="400"><br />
+						<span style="font-size:22px">Agora em Uberaba :)</span>
+					</p>		
+				</section>
+
+				<section>
+					<h5>Como funciona:</h5>
+					<p>
+						<ul>
+							<li style="font-size:22px">É um OpenSpace onde o pessoal fazem reuniões para troca de conhecimento;</li>
+							<li style="font-size:22px">O hackerspace é mantido pelos próprios membros, com  mensalidades, doações e outras formas de arrecadação de fundos;</li>
+							<li style="font-size:22px">O hackerspace é independente, sem ligação formal com nenhuma empresa, entidade ou universidade. Isto para ter  liberdade de desenvolver e livre ao espaço para qualquer interessado, a qualquer momento;</li>
+							<li style="font-size:22px">Deve ser multidisciplinar, ou seja, ter participantes de várias áreas de conhecimento, como engenharia, hardware, eletrônica, software, desenvolvimento, Software Livre, segurança da infomação e, principalmente, pessoas de outras áreas como artes digitais, música, robótica, espaçomodelismo, bioengenharia ou robótica, por exemplo;</li>
+							<li style="font-size:22px">Como o espaço é livre, o hackerspace deve permitir o desenvolvimento de projetos próprios de seus membros ou projetos comunitários e OpenSource (O THS apoia fortemente Open Source);</li>
+							<li style="font-size:22px">O hackerspace também deve servir como um espaço de encontro para as pessoas socializarem, ensinarem e aprenderem, através de atividades abertas a todos os interessados.</li>
+						</ul>
+					</p>		
+				</section>
+
+
+				<section>
+					<h5>Como pensamos e agimos:</h5>
+					<p>
+						<ul>
+							<li style="font-size:22px">Propriedade e gerência sob responsabilidade de seus membros, num espírito de igualdade.</li>
+							<li style="font-size:22px">É uma organização sem fins lucrativos e aberto ao mundo exterior em uma periodicidade (semi) regular.</li>
+							<li style="font-size:22px">Compartilha ferramentas, equipamentos e idéias, sem discriminação.</li>
+							<li style="font-size:22px">Uma forte ênfase na tecnologia e na inovação.</li>
+							<li style="font-size:22px">Tem um espaço compartilhado, como um ponto central da comunidade.</li>
+							<li style="font-size:22px">Um forte espírito de criatividade e ciência, com base na experimentação, erro e livre compartilhamento de informações.</li>
+						</ul>
+					</p>		
+				</section>
+
+				<section>
+					<h5>O que Incentivamos:</h5>
+					<p>
+						<ul>
+							<li style="font-size:22px">Tecnologia.</li>
+							<li style="font-size:22px">Auto-didata.</li>
+							<li style="font-size:22px">Criatividade.</li>
+							<li style="font-size:22px">Contruir *DIY.</li>
+							<li style="font-size:22px">Inovação.</li>
+						</ul>
+					</p>		
+				</section>
+
+				<section>
+					<h5>Compartilhar conhecimento e Auto Aprendizado</h5>
+					<p><span style="font-size:22px">
+						<img data-src="img/team-work.jpeg" width="400" header="300">
+					</span></p>	
+				</section>
+				
+				<section>
+					<h5>O que não fazemos</h5>
+					<p><span style="font-size:22px">
+						"Vcs invadem Facebook ou usam camera de segurança para inspionagem?" THS: Não
+					</span></p>	
+				</section>
+
+				<section>
+					<h5>Como funciona o Espaço Físico:</h5>
+					<p>
+						<ul>
+							<li style="font-size:22px">Independente.</li>
+							<li style="font-size:22px">Monitorado.</li>
+							<li style="font-size:22px">Livro Acesso (Com Key-Holders).</li>
+							<li style="font-size:22px">Comunitário.</li>
+							<li style="font-size:22px">Festivo (Churrasco, THS Beer, THS Open Tech (Pizza).</li>
+						</ul>
+					</p>		
+				</section>
+
+				<section>
+					<h5>Doações</h5>
+					<p><span style="font-size:22px">
+						<img data-src="img/donate.jpeg" width="250" header="200">
+						<p><span style="font-size:22px">
+							Todas as doações tem prestação de Contas
+						</span></p>	
+					</span></p>	
+				</section>
+
+				<section>
+					<h5>Eventos e Projetos</h5>
+					<p><span style="font-size:22px">
+						<img data-src="img/acoes-ths.png" width="650" header="600">
+					</span></p>	
+				</section>
+
+				<section>
+					<img data-src="img/ineedyou.jpeg" width="250" header="200">
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
